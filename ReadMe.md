@@ -2,6 +2,7 @@
 
 This project is a full-featured, scalable multi-vendor e-commerce platform built using **Django** for the backend and **React** for the frontend. It enables multiple vendors to manage their own stores while providing customers with a seamless shopping experience. The application incorporates role-based access control, secure authentication, and a rich set of e-commerce functionalities.
 
+Live Link: https://haatkhola.netlify.app/
 ---
 
 ## 🚀 Features
