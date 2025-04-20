@@ -29,66 +29,100 @@ Follow these steps to set up the project locally:
 git clone https://github.com/mehedii1515/Advanced_Multivendor_Ecommerce_Website.git
 cd Advanced_Multivendor_Ecommerce_Website
 ```
-2. Set up the Backend (Django)
-Install backend dependencies
-bash
-Copy
-Edit
+---
+
+## 1️⃣ Set Up the Backend (Django)
+
+### ✅ Install Backend Dependencies
+
+```bash
 cd backend
 pip install -r requirements.txt
-Configure Database
-Make sure to set up the database in the settings.py file in the backend directory. By default, it uses SQLite, but you can configure it to use PostgreSQL or MySQL if necessary.
+```
 
-Apply Migrations
-bash
-Copy
-Edit
+### ⚙️ Configure the Database
+
+Make sure your database settings are configured in `backend/settings.py`.  
+By default, it uses **SQLite**, but you can switch to **PostgreSQL** or **MySQL**.
+
+### 🔁 Apply Migrations
+
+```bash
 python manage.py migrate
-Create a Superuser (Admin)
-bash
-Copy
-Edit
-python manage.py createsuperuser
-Follow the prompts to create an admin user. You can access the admin panel at http://localhost:8000/admin.
+```
 
-3. Set up the Frontend (React)
-Install frontend dependencies
-bash
-Copy
-Edit
+### 👤 Create a Superuser (Admin)
+
+```bash
+python manage.py createsuperuser
+```
+
+Follow the prompts to create an admin account.  
+Access the admin panel at: [http://localhost:8000/admin](http://localhost:8000/admin)
+
+---
+
+## 2️⃣ Set Up the Frontend (React)
+
+### 📥 Install Frontend Dependencies
+
+```bash
 cd frontend
 npm install
-Start the React development server
-bash
-Copy
-Edit
-npm start
-This will start the React development server on http://localhost:3000.
+```
 
-4. Run the Backend Server
-bash
-Copy
-Edit
+### 🚀 Start the React Development Server
+
+```bash
+npm start
+```
+
+The React frontend will run at: [http://localhost:3000](http://localhost:3000)
+
+---
+
+## 3️⃣ Run the Backend Server
+
+```bash
 cd backend
 python manage.py runserver
-This will start the Django server on http://localhost:8000.
+```
 
-Usage
-For Admins: You can access the Django admin panel at http://localhost:8000/admin to manage users, products, and vendors.
+This will start the Django backend server at: [http://localhost:8000](http://localhost:8000)
 
-For Customers: You can browse products, add them to the cart, and place orders.
+---
 
-For Vendors: Vendors can register and manage their stores and products.
+## 🧑‍💻 Usage
+
+### 🔐 Admins  
+Manage users, products, vendors via: [http://localhost:8000/admin](http://localhost:8000/admin)
+
+### 🛍️ Customers  
+Browse products, add to cart, and place orders from the React frontend.
+
+### 🏪 Vendors  
+Register and manage stores, products, and view orders.
+
+---
 
 
+---
 
-Create your feature branch (git checkout -b feature/your-feature).
+## 🤝 Contributing
 
-Commit your changes (git commit -am 'Add new feature').
+1. Fork the repository  
+2. Create your feature branch  
+   ```bash
+   git checkout -b feature/your-feature
+   ```
+3. Commit your changes  
+   ```bash
+   git commit -am 'Add new feature'
+   ```
+4. Push to your branch  
+   ```bash
+   git push origin feature/your-feature
+   ```
+5. Create a Pull Request
 
-Push to the branch (git push origin feature/your-feature).
-
-Create a new Pull Request.
-
-
-This is a comprehensive `README.md` file for your project. Feel free to adjust any sections as needed!
+---
