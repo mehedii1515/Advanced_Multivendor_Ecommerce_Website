@@ -1,128 +1,137 @@
-# HaatKhola Advanced Multivendor Ecommerce Website
+# 🛒 HaatKhola Advanced Multi-Vendor E-commerce Website
 
-This project is an advanced multivendor e-commerce website built using **Django** and **React**. It allows multiple vendors to list and sell their products, while customers can browse, search, and purchase items. The website provides a fully functional platform for both customers and vendors, including user authentication, order management, and vendor management features.
+This project is a full-featured, scalable multi-vendor e-commerce platform built using **Django** for the backend and **React** for the frontend. It enables multiple vendors to manage their own stores while providing customers with a seamless shopping experience. The application incorporates role-based access control, secure authentication, and a rich set of e-commerce functionalities.
 
-## Project Features
+---
 
-- **Multivendor Support**: Vendors can register, manage their stores, and list products for sale.
-- **User Authentication**: Users can register, log in, and manage their profiles.
-- **Product Search and Filters**: Customers can search for products and filter based on various criteria.
-- **Shopping Cart and Checkout**: Customers can add products to their cart and proceed to checkout.
-- **Order Management**: Both customers and vendors can view order history and manage orders.
-- **Admin Panel**: The admin panel allows administrators to manage users, vendors, and orders.
+## 🚀 Features
 
-## Tech Stack
+### 🧑‍💼 User Roles
 
-- **Frontend**: React.js
-- **Backend**: Django (Python)
-- **Database**: SQLite (default, can be configured to use PostgreSQL or MySQL)
-- **Authentication**: JWT (JSON Web Tokens) for secure user authentication
-- **Deployment**: Docker (for containerization)
+- **Super Admin**: Oversees the entire platform, manages users, vendors, and site-wide settings.
+- **Vendor**: Manages their own store, including product listings, orders, and store details.
+- **Customer**: Browses products, places orders, and manages personal profiles.
 
-## Installation
+### 🛍️ E-commerce Functionalities
 
-Follow these steps to set up the project locally:
+- **Product Management**: Vendors can add, edit, and delete products with images and descriptions.
+- **Shopping Cart**: Customers can add products to their cart and proceed to checkout.
+- **Order Processing**: Order placement, tracking, and management for both vendors and customers.
+- **Payment Integration**: Secure payment processing using integrated payment gateways.
+- **Product Reviews and Ratings**: Customers can leave feedback on products.
+- **Search and Filtering**: Advanced search options to find products easily.
 
-### 1. Clone the repository
+### 🔐 Security and Access Control
+
+- **Authentication**: Secure login and registration for all user roles.
+- **Authorization**: Role-based access control to restrict functionalities based on user roles.
+- **Data Validation**: Server-side validation to ensure data integrity.
+
+---
+
+## 🛠️ Technologies Used
+
+### Frontend
+
+- React
+- Redux
+- React Router
+- Axios
+- Bootstrap
+
+### Backend
+
+- Django
+- Django REST Framework
+- PostgreSQL
+- JWT Authentication
+
+### Others
+
+- Docker
+- Nginx
+- Gunicorn
+- Celery
+- Redis
+
+---
+
+## 📦 Installation
+
+### Prerequisites
+
+- Python 3.8+
+- Node.js 14+
+- PostgreSQL
+- Docker and Docker Compose (optional, for containerization)
+
+### Backend Setup
+
+1. Clone the repository:
 
 ```bash
 git clone https://github.com/mehedii1515/Advanced_Multivendor_Ecommerce_Website.git
-cd Advanced_Multivendor_Ecommerce_Website
+cd Advanced_Multivendor_Ecommerce_Website/backend
 ```
----
 
-## 1️⃣ Set Up the Backend (Django)
-
-### ✅ Install Backend Dependencies
+2. Create a virtual environment and activate it:
 
 ```bash
-cd backend
+python -m venv env
+source env/bin/activate  # On Windows: env\Scripts\activate
+```
+
+3. Install dependencies:
+
+```bash
 pip install -r requirements.txt
 ```
 
-### ⚙️ Configure the Database
+4. Configure the `.env` file with your environment variables.
 
-Make sure your database settings are configured in `backend/settings.py`.  
-By default, it uses **SQLite**, but you can switch to **PostgreSQL** or **MySQL**.
-
-### 🔁 Apply Migrations
+5. Apply migrations:
 
 ```bash
 python manage.py migrate
 ```
 
-### 👤 Create a Superuser (Admin)
+6. Create a superuser:
 
 ```bash
 python manage.py createsuperuser
 ```
 
-Follow the prompts to create an admin account.  
-Access the admin panel at: [http://localhost:8000/admin](http://localhost:8000/admin)
-
----
-
-## 2️⃣ Set Up the Frontend (React)
-
-### 📥 Install Frontend Dependencies
+7. Run the development server:
 
 ```bash
-cd frontend
+python manage.py runserver
+```
+
+### Frontend Setup
+
+1. Navigate to the frontend directory:
+
+```bash
+cd ../frontend
+```
+
+2. Install dependencies:
+
+```bash
 npm install
 ```
 
-### 🚀 Start the React Development Server
+3. Start the development server:
 
 ```bash
 npm start
 ```
 
-The React frontend will run at: [http://localhost:3000](http://localhost:3000)
-
 ---
 
-## 3️⃣ Run the Backend Server
-
-```bash
-cd backend
-python manage.py runserver
-```
-
-This will start the Django backend server at: [http://localhost:8000](http://localhost:8000)
-
----
-
-## 🧑‍💻 Usage
-
-### 🔐 Admins  
-Manage users, products, vendors via: [http://localhost:8000/admin](http://localhost:8000/admin)
-
-### 🛍️ Customers  
-Browse products, add to cart, and place orders from the React frontend.
-
-### 🏪 Vendors  
-Register and manage stores, products, and view orders.
-
----
-
-
----
 
 ## 🤝 Contributing
 
-1. Fork the repository  
-2. Create your feature branch  
-   ```bash
-   git checkout -b feature/your-feature
-   ```
-3. Commit your changes  
-   ```bash
-   git commit -am 'Add new feature'
-   ```
-4. Push to your branch  
-   ```bash
-   git push origin feature/your-feature
-   ```
-5. Create a Pull Request
+Contributions are welcome! Please fork the repository and submit a pull request for any enhancements or bug fixes.
 
 ---
