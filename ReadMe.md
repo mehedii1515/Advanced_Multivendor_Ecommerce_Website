@@ -28,6 +28,7 @@ Follow these steps to set up the project locally:
 ```bash
 git clone https://github.com/mehedii1515/Advanced_Multivendor_Ecommerce_Website.git
 cd Advanced_Multivendor_Ecommerce_Website
+```
 2. Set up the Backend (Django)
 Install backend dependencies
 bash
